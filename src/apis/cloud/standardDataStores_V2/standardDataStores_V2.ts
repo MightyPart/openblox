@@ -162,7 +162,7 @@ export const createStandardDataStoreEntry = createApiMethod(async <Schema extend
 
   formatRawDataFn: rawData => cloneAndMutateObject(rawData, obj => {
     obj.createTime = new Date(obj.createTime)
-    obj.revisionCreateTime = new Date(obj.createTime)
+    obj.revisionCreateTime = new Date(obj.revisionCreateTime)
   })
 }))
 
@@ -200,7 +200,7 @@ export const standardDataStoreEntry = createApiMethod(async <Schema extends Reco
 
   formatRawDataFn: rawData => cloneAndMutateObject(rawData, obj => {
     obj.createTime = new Date(obj.createTime)
-    obj.revisionCreateTime = new Date(obj.createTime)
+    obj.revisionCreateTime = new Date(obj.revisionCreateTime)
   })
 }))
 
@@ -279,7 +279,7 @@ export const updateStandardDataStoreEntry = createApiMethod(async <Schema extend
 
   formatRawDataFn: rawData => cloneAndMutateObject(rawData, obj => {
     obj.createTime = new Date(obj.createTime)
-    obj.revisionCreateTime = new Date(obj.createTime)
+    obj.revisionCreateTime = new Date(obj.revisionCreateTime)
   })
 }))
 
@@ -322,7 +322,7 @@ export const incrementStandardDatastoreEntry = createApiMethod(async (
 
   formatRawDataFn: rawData => cloneAndMutateObject(rawData, obj => {
     obj.createTime = new Date(obj.createTime)
-    obj.revisionCreateTime = new Date(obj.createTime)
+    obj.revisionCreateTime = new Date(obj.revisionCreateTime)
   })
 }))
 
@@ -372,7 +372,7 @@ export const listStandardDataStoreEntryRevisions = createApiMethod(async <
   formatRawDataFn: ({ dataStoreEntries }) => dataStoreEntries.map(
     entry => cloneAndMutateObject(entry, obj => {
       obj.createTime = new Date(obj.createTime)
-      obj.revisionCreateTime = new Date(obj.createTime)
+      obj.revisionCreateTime = new Date(obj.revisionCreateTime)
     })
   ),
 
